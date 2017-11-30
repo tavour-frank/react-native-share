@@ -15,14 +15,14 @@ public class SmsShare extends ShareIntent {
     public SmsShare(ReactApplicationContext reactContext) {
         super(reactContext);
         this.setIntent(new Intent(android.content.Intent.ACTION_VIEW));
-        this.getIntent().setData(Uri.parse("sms:"));
-        this.getIntent().setType("vnd.android-dir/mms-sms");
     }
 
     @Override
     public void open(ReadableMap options) throws ActivityNotFoundException {
         super.open(options);
         //  extra params here
+        this.getIntent().setData(Uri.parse("sms:"));
+        this.getIntent().setType("vnd.android-dir/mms-sms");
         this.openIntentChooser();
     }
 
