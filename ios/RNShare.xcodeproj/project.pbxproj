@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01ADFBCF1FD606E200B09561 /* SmsShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ADFBCD1FD606E200B09561 /* SmsShare.m */; };
 		B33C22851D441713006BCD98 /* GenericShare.m in Sources */ = {isa = PBXBuildFile; fileRef = B33C22841D441713006BCD98 /* GenericShare.m */; };
 		B33C22891D4419E8006BCD98 /* WhatsAppShare.m in Sources */ = {isa = PBXBuildFile; fileRef = B33C22881D4419E8006BCD98 /* WhatsAppShare.m */; };
 		B33C228B1D442577006BCD98 /* EmailShare.m in Sources */ = {isa = PBXBuildFile; fileRef = B33C228A1D442576006BCD98 /* EmailShare.m */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01ADFBCD1FD606E200B09561 /* SmsShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmsShare.m; sourceTree = "<group>"; };
+		01ADFBCE1FD606E200B09561 /* SmsShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmsShare.h; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libRNShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNShare.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33C22841D441713006BCD98 /* GenericShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericShare.m; sourceTree = "<group>"; };
 		B33C22861D441723006BCD98 /* GenericShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericShare.h; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 		B33C22801D43F9B0006BCD98 /* social */ = {
 			isa = PBXGroup;
 			children = (
+				01ADFBCD1FD606E200B09561 /* SmsShare.m */,
+				01ADFBCE1FD606E200B09561 /* SmsShare.h */,
 				B33C22841D441713006BCD98 /* GenericShare.m */,
 				B33C22861D441723006BCD98 /* GenericShare.h */,
 				B33C22871D4419DA006BCD98 /* WhatsAppShare.h */,
@@ -141,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3EEE48E1D4844E7008422B6 /* GooglePlusShare.m in Sources */,
+				01ADFBCF1FD606E200B09561 /* SmsShare.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNShare.m in Sources */,
 				B33C22891D4419E8006BCD98 /* WhatsAppShare.m in Sources */,
 				B33C228B1D442577006BCD98 /* EmailShare.m in Sources */,
