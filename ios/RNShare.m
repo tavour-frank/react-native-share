@@ -44,6 +44,7 @@
 #import "WhatsAppShare.h"
 #import "GooglePlusShare.h"
 #import "EmailShare.h"
+#import "SmsShare.h"
 
 @implementation RNShare
 - (dispatch_queue_t)methodQueue
@@ -80,6 +81,10 @@ RCT_EXPORT_METHOD(shareSingle:(NSDictionary *)options
         } else if([social isEqualToString:@"email"]) {
             NSLog(@"TRY OPEN email");
             EmailShare *shareCtl = [[EmailShare alloc] init];
+            [shareCtl shareSingle:options failureCallback: failureCallback successCallback: successCallback];
+        } else if([social isEqualToString:@"sms"]) {
+            NSLog(@"TRY OPEN sms");
+            SmsShare *shareCtl = [[SmsShare alloc] init];
             [shareCtl shareSingle:options failureCallback: failureCallback successCallback: successCallback];
         }
     } else {
